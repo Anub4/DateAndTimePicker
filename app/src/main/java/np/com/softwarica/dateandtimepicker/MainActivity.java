@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
+import java.text.SimpleDateFormat;
 import java.time.Year;
 import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
         DatePickerDialog datePickerDialog = new DatePickerDialog(this,this,year,month,day);
         datePickerDialog.show();
+
+
     }
 
     @Override
@@ -45,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
         String date=  month + "/" + dayOfMonth + "/" + year;
         et1.setText(date);
+        n
 
     }
 }
